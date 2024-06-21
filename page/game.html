@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/game.css">
+    <script src="https://kit.fontawesome.com/0914ea855e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bread_cum">
+            <ul class="breadcrumb">
+                <li>Create question</li>
+                <li class="active">Play</li>
+            </ul>
+        </div>
+        <section class="title">
+            <div class="screen_game">
+                <!-- this is backgorund image -->
+                <div class="play_screen">
+                    <div class="icon_play">
+                        <i class="fa-solid fa-play icon_awesome"></i>
+                    </div>
+                </div>
+                <!-- this is backgorund image -->
+
+                <!-- box game -->
+                <div class="store_scroll scrollbar">
+                    <div class="list_play">
+                    </div>
+                </div>
+                <!-- box game -->
+
+                <div class="box_join_game hidden">
+                    <div class="box_question_quiz">
+                        <p></p>
+                    </div>
+                    <div class="answer_quiz">
+                        <div class="box_choosen">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show_score">
+                    <i class="fa-solid fa-bars bar_fontawsome"></i>
+                </div>
+
+                <div class="bg-menu">
+                    <div class="menu">
+                        <div class="menu_item" onclick="showScore()">My score</div>
+                        <div class="menu_item" onclick="backHome()">Back to home</div>
+                        <div class="menu_item" onclick="restartGame()">Reset game</div>
+                        <i class="fa-solid fa-xmark close_icon" onclick="closePop()"></i>
+                    </div>
+                    <div class="score">
+                        <p></p>
+                        <button class="back_menu" onclick="backMenu()">Back</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../assets/js/game.js"></script>
+</body>
+
+</html>
